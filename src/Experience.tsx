@@ -3,13 +3,13 @@ import { OrbitControls } from "@react-three/drei";
 export default function Experience() {
 return(<>
   {/* Setings */}
-  <color attach={'background'} args={[0.1, 0.1, 0.1]}/>
+  <color attach={'background'} args={[0.89,1.00,0.80]}/>
   {/* Camera */}
   <OrbitControls/>
   {/* Scene */}
   <mesh>
     <boxGeometry/>
-    <meshBasicMaterial color={'blue'}/>
+    <meshNormalMaterial/>
   </mesh>  
 </>)
 }
